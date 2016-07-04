@@ -1,5 +1,7 @@
 # PHP 7 coding style guide.
 
+[![Join the chat at https://gitter.im/phpgt/styleguide](https://badges.gitter.im/phpgt/styleguide.svg)](https://gitter.im/phpgt/styleguide?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 This guide describes the preferred PHP coding style within core repositories and as a basis for other projects' style guides.
 
 Individual developers and teams are likely to have their own strong views on certain coding styles, so this set of documents should be seen as **a guide, not a rulebook**. That being said, everything that is documented here is the preference of core developers, so please consider the points within before submitting pull requests.
