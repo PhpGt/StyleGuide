@@ -53,7 +53,7 @@ Please see a simplified bulleted list below. Click the headings for more informa
 + Namespaces must map to file paths, as per PSR-4.
 + Web mapped files and directories must use `lowercase-hyphenated-words`.
 
-### Classes
+### Classes.
 
 + The term "class" refers to all classes, interfaces, and traits.
 + A class should only ever be autoloaded - never use `require` or `include`.
@@ -66,7 +66,7 @@ Please see a simplified bulleted list below. Click the headings for more informa
 + Methods should avoid becoming longer than 20-50 lines.
 + Classes should have all or no static functions.
 
-### Databases
+### Databases.
 
 + Tables should be organised into a Table Collection Hierarchy.
 + Tables should use `UpperCamelCase`.
