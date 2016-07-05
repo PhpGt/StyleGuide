@@ -12,7 +12,7 @@ The intent of this document is to help guide the style of code contributions to 
 
 Please see a simplified bulleted list below. Click the headings for more information, examples and justification of the decisions.
 
-### [General concepts]("general").
+### [General concepts](general).
 
 + The first line of all `.php` files should be exactly: `<?php`.
 + Never use PHP short tags.
