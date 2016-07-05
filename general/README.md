@@ -1,3 +1,3 @@
 # General concepts.
 
-Test file.
+Test file. [Test link](test-link).
