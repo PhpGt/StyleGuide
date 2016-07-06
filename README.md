@@ -73,6 +73,9 @@ Please see a simplified bulleted list below. Click the headings for more informa
 + Tables in the same collection should use an underscore to split the hierarchy.
 + Columns should use `lowercase_underscored`.
 + Primary keys should follow `id_TableName`.
++ Columns can have optional descriptions to uniquely identify their purpose.
++ Foreign key column names should match their referenced column.
++ Foreign key constraint names should reference both tables and columns uniquely.
 
 ### [Commenting](commenting).
 
