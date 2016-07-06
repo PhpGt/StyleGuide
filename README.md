@@ -1,6 +1,6 @@
 # PHP 7 coding style guide.
 
-This guide describes the preferred PHP coding style within core repositories and as a basis for other projects' style guides.
+This guide describes the preferred PHP coding style within core [PHP.Gt](https://github.com/phpgt) repositories and as a basis for other projects' style guides.
 
 Individual developers and teams are likely to have their own strong views on certain coding styles, so this set of documents should be seen as **a guide, not a rulebook**. That being said, everything that is documented here is the preference of core developers, so please consider the points within before submitting pull requests.
 
