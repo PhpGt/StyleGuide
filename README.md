@@ -10,7 +10,7 @@ The intent of this document is to help guide the style of code contributions to 
 
 ## Overview.
 
-Please see a simplified bulleted list below. Click the headings for more information, examples and justification of the decisions.
+Please see a simplified bulleted list below. Click the headings for more information, examples and justification behind the decisions.
 
 ### [General concepts](general).
 
