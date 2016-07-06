@@ -64,7 +64,7 @@ Please see a simplified bulleted list below. Click the headings for more informa
 + All parameters should define their type where possible.
 + All methods should define their return type where possible.
 + Methods should avoid becoming longer than 20-50 lines.
-+ Classes should have all or no static functions.
++ Classes should have all or no static methods.
 
 ### [Databases](databases).
 
