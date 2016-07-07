@@ -18,13 +18,13 @@ Please see a simplified bulleted list below. Click the headings for more informa
 + Never use PHP short tags.
 + Never use the closing PHP tag (`?>`).
 + All files must only use `UTF-8`, without `BOM`.
++ Always use UTC timezone to work with date and time.
 + Every `.php` file should contain one class exactly.
 + Every `.php` file should be side effect free, apart from bare-minimum essential entry point files.
 + Singular words (e.g. item, stylesheet, user) should be used throughout files and code instead of plurals.
 + Never use global variables, except for superglobals.
 + Properties should always be declared.
 + Variables should always be declared at the top of the scope they are used in.
-+ Always use UTC timezone to work with date and time.
 
 ### [Indentation and whitespace](indentation-whitespace).
 
