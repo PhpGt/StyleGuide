@@ -64,7 +64,7 @@ private function anotherExampleMethod() : ?Container {
 }
 
 }#
-``
+```
 
 Please see a simplified bulleted list below. Click the headings for more information, examples and justification behind the decisions.
 
