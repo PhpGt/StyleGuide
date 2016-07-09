@@ -3,8 +3,8 @@
 ## [PHP tags](php-tags.md).
 
 + The first line of all `.php` files should be exactly: `<?php`.
-+ Never use PHP short tags.
 + Never use the closing PHP tag (`?>`).
++ Never use PHP short tags.
 
 ## [Standards](standards.md).
 
