@@ -26,7 +26,7 @@ class Index_PageLogic extends \Gt\Page\Logic {
 private $matchArray;
 private $filterDetail;
 
-public function go():void {
+public function go() : void {
 	$count = 0;
 	$expiry = new DateTime("-5 minutes");
 	$action = new Action();
