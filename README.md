@@ -10,13 +10,69 @@ The intent of this document is to help guide the style of code contributions to 
 
 ## Overview.
 
+The following example code shows an overview of the style proposed in this guide.
+
+```php
+<?php
+namespace MyWebsite\Page;
+
+use DateTime;
+use MyWebsite\Thing\Action;
+use MyWebsite\Thing\Response;
+use MyWebsite\OtherThing\Container;
+
+class Index_PageLogic extends \Gt\Page\Logic {
+
+private $matchArray;
+private $filterDetail;
+
+public function go():void {
+	$count = 0;
+	$expiry = new DateTime("-5 minutes");
+	$action = new Action();
+
+	if($action->isActive()) {
+		$count += $this->exampleMethod();
+	}
+	else {
+// when the action is not active, we should call the not active method before
+// refreshing the action.
+		$action->setActive($this->anotherExampleMethod());
+
+		if($action->needsRefresh()
+		&& $action->expiry < $expiry) {
+			$action->refresh();
+		}
+	}
+}
+
+private function exampleMethod() : int {
+	$this->matchArray = [
+		"first" => Action::FIRST_VALUE,
+		"second" => Action::SECOND_VALUE,
+	];
+
+	return count($this->matchArray);
+}
+
+private function anotherExampleMethod() : ?Container {
+	foreach($this->matchArray as $key => $value) {
+		Response::add($key, $value);
+	}
+
+	return Response::currentContainer();
+}
+
+}#
+``
+
 Please see a simplified bulleted list below. Click the headings for more information, examples and justification behind the decisions.
 
 ### [General concepts](general).
 
 + The first line of all `.php` files should be exactly: `<?php`.
-+ Never use PHP short tags.
 + Never use the closing PHP tag (`?>`).
++ Never use PHP short tags.
 + All files must only use `UTF-8`, without `BOM`.
 + Always use UTC timezone to work with date and time.
 + Every `.php` file should contain one class exactly.
