@@ -9,7 +9,7 @@
 ## [Standards](standards.md).
 
 + All files must only use `UTF-8`, without `BOM`.
-+ Always use UTC timezone to work with date and time.
++ Always use UTC timezone to store date and time.
 
 ## [Side effects](side-effects.md).
 

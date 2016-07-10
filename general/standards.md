@@ -10,6 +10,6 @@ The Unicode Standard neither requires nor recommends the use of the BOM for UTF-
 
 All good code editors can be configured to use different file encodings.
 
-## Always use UTC timezone to work with date and time.
+## Always use UTC timezone to store date and time.
 
 // TODO.
