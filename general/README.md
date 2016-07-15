@@ -13,8 +13,8 @@
 
 ## [Side effects](side-effects.md).
 
-+ Every `.php` file should contain one class exactly, apart from bare-minimum essential entry point files.
-+ Every `.php` file should be side effect free, apart from bare-minimum essential entry point files.
++ Every `.php` library file should contain one class exactly.
++ Every `.php` library file should be side effect free.
 
 ## [Naming convention](naming-convention.md).
 

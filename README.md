@@ -75,8 +75,8 @@ Please see a simplified bulleted list below. Click the headings for more informa
 + Never use PHP short tags.
 + All files must only use `UTF-8`, without `BOM`.
 + Always use UTC timezone to store date and time.
-+ Every `.php` file should contain one class exactly, apart from bare-minimum essential entry point files.
-+ Every `.php` file should be side effect free, apart from bare-minimum essential entry point files.
++ Every `.php` library file should contain one class exactly.
++ Every `.php` library file should be side effect free.
 + Singular words (e.g. item, stylesheet, user) should be used throughout files and code instead of plurals.
 + Never use global variables, except for superglobals.
 + Properties should always be declared.
