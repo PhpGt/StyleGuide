@@ -35,7 +35,7 @@ public function go() : void {
 		$count += $this->exampleMethod();
 	}
 	else {
-// when the action is not active, we should call the not active method before
+// when the action is not active, we should call the set active method before
 // refreshing the action.
 		$action->setActive($this->anotherExampleMethod());
 
