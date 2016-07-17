@@ -34,7 +34,7 @@ A software "library" means a repository of code that has no functionality withou
 
 A software "project" means a repository of code that has its own functionality and can include other software libraries as dependencies.
 
-An example "library": [phpgt/dom: The DOM API for PHP7 projects.][phpgt/dom]. The DOM library does not have any functionality of its own, but can be used by projects to manipulate HTML documents using the contained classes. All files within the library can be included without any side effects.
+An example "library": [phpgt/dom: The DOM API for PHP 7 applications.][phpgt/dom]. The DOM library does not have any functionality of its own, but can be used by projects to manipulate HTML documents using the contained classes. All files within the library can be included without any side effects.
 
 An example "project": [phpgt/webengine: Rapid development engine for PHP 7 applications.][phpgt/webengine]. The webengine project can be used to load and serve web applications. Most files within the project can be included without any side effects, apart from a few procedural style files used to initiate web requests, or serve web pages.
 
