@@ -2,7 +2,7 @@
 
 ## Avoid "double-indenting" blocks of code where no indentation is necessary for readability.
 
-The purpose of indenting code is to make it visually clear where a block of control starts and ends. Along with the [readability of using 80 character maximum line lengths][line-length], care should be taken to only indent blocks that actually increase readability.
+The purpose of indenting code is to make it visually clear where a block of control starts and ends. With respect to [using 80 character maximum line lengths][line-length], care should be taken to only indent blocks that actually increase readability.
 
 Certain control blocks, such as **class definitions** and **switch statements** do not need to have double-indentation, because it is perfectly obvious that code is within the block. For classes, because [every `.php` library file should contain one class exactly][side-effects], the contents of the class block can be left unindented, starting from column 1.
 
