@@ -26,7 +26,7 @@ class Index_PageLogic extends \Gt\Page\Logic {
 private $matchArray;
 private $filterDetail;
 
-public function go() : void {
+public function go():void {
 	$count = 0;
 	$expiry = new DateTime("-5 minutes");
 	$action = new Action();
@@ -43,10 +43,20 @@ public function go() : void {
 		&& $action->expiry < $expiry) {
 			$action->refresh();
 		}
+		
+		switch($count) {
+		0: 
+			$action->setEmpty();
+			break;
+		1:
+		2:
+			$action->setLow();
+			break;
+		}
 	}
 }
 
-private function exampleMethod() : int {
+private function exampleMethod():int {
 	$this->matchArray = [
 		"first" => Action::FIRST_VALUE,
 		"second" => Action::SECOND_VALUE,
@@ -55,7 +65,7 @@ private function exampleMethod() : int {
 	return count($this->matchArray);
 }
 
-private function anotherExampleMethod() : ?Container {
+private function anotherExampleMethod():?Container {
 	foreach($this->matchArray as $key => $value) {
 		Response::add($key, $value);
 	}
