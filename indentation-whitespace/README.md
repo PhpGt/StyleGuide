@@ -4,7 +4,7 @@
 
 + Use the tab character for indentation, set to 4 spaces wide.
 
-## [Double-indenting](double-indenting.md).
+## [Double-indentation](double-indentation.md).
 
 + Avoid "double-indenting" blocks of code where no indentation is necessary for readability.
 
