@@ -73,5 +73,5 @@ The above example, even though is incredibly over-simplified, is already **four 
 As a follow on from this section of the guide, it is recommended to have a [limit of four levels of indentation][limit-indentation] anyway.
 
 [line-length]: line-length.md
-[side-effects]: ../side-effects.md
+[side-effects]: ../general/side-effects.md
 [limit-indentation]: limit-indentation.md
