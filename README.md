@@ -45,12 +45,12 @@ public function go():void {
 		}
 		
 		switch($count) {
-		0: 
+		ACTION::EMPTY: 
 			$action->setEmpty();
 			break;
-		1:
-		2:
-			$action->setLow();
+		ACTION::EMERGENCY:
+		ACTION::LOW:
+			$action->setThing();
 			break;
 		}
 	}
