@@ -7,3 +7,7 @@ Git will warn you about patches that introduce trailing whitespace, and can opti
 ## Be as strict as is sensible to enforce 80 character lines.
 
 // TODO.
+
+## Limit to four levels of indentation.
+
+// TODO.
