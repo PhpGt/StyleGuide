@@ -1,6 +1,6 @@
 # Casing
 
-## Tables should use `UpperCamelCase`.
+## Tables should use `lowercase_underscored`.
 
 // TODO.
 
@@ -8,6 +8,6 @@
 
 // TODO.
 
-## Primary keys should follow `id_TableName`.
+## Primary keys should follow `id_table`.
 
 // TODO.

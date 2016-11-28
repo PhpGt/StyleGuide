@@ -1,15 +1,15 @@
 # Databases
 
-## [Table collection hierarchies](table-collection-hierarchies.md)
+## [Query collection hierarchies](query-collection-hierarchies.md)
 
-+ Tables should be organised into a Table Collection Hierarchy.
-+ Tables in the same collection should use an underscore to split the hierarchy.
++ Queries should be organised into a Query Collection Hierarchy.
++ Tables within the same collection can use an underscore to indicate their hierarchy.
 
 ## [Casing](casing.md)
 
-+ Tables should use `UpperCamelCase`.
++ Tables should use `lowercase_underscored`.
 + Columns should use `lowercase_underscored`.
-+ Primary keys should follow `id_TableName`.
++ Primary keys should follow `id_table`.
 
 ## [Naming](naming.md)
 
