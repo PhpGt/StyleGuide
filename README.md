@@ -160,3 +160,9 @@ Please see a simplified bulleted list below. Click the headings for more informa
 + Static classes should only be used when truly stateless.
 + Private methods should be preferred over anonymous functions where appropriate.
 + Anonymous functions should never exceed 5 lines.
+
+### [Documentation][documentation]
+
++ Use full stops to end full sentences.
++ Don't use full stops to end fragmented sentences.
++ Choose either full sentences or ending fragments in lists (not both).
