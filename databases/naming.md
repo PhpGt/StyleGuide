@@ -1,4 +1,4 @@
-# Naming.
+# Naming
 
 ## Columns can have optional descriptions to uniquely identify their purpose.
 

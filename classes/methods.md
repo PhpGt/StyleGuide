@@ -1,4 +1,4 @@
-# Methods.
+# Methods
 
 ## Methods should use `camelCase()`.
 

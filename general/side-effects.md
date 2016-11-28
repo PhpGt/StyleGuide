@@ -1,4 +1,4 @@
-# Side effects.
+# Side effects
 
 ## Every `.php` library file should contain one class exactly.
 

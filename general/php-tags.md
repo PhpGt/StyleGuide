@@ -1,4 +1,4 @@
-# PHP tags.
+# PHP tags
 
 ## The first line of all `.php` files should be exactly: `<?php`.
 

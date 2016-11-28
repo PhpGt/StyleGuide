@@ -1,4 +1,4 @@
-# Associative arrays.
+# Associative arrays
 
 ## Associative arrays should only be used for simple key-value-pairs.
 

@@ -1,4 +1,4 @@
-# Members.
+# Members
 
 ## Constants should only be declared on a class.
 

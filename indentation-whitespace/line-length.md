@@ -1,4 +1,4 @@
-# Line length.
+# Line length
 
 ## Do not leave whitespace at the end of lines.
 

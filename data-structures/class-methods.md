@@ -1,4 +1,4 @@
-# Class methods.
+# Class methods
 
 ## Static classes should only be used when truly stateless.
 

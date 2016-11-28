@@ -1,4 +1,4 @@
-# Casing.
+# Casing
 
 ## Tables should use `UpperCamelCase`.
 

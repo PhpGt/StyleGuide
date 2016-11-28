@@ -1,4 +1,4 @@
-# Path mapping.
+# Path mapping
 
 ## Directories and files must either be namespace-mapped or web-mapped.
 

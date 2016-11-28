@@ -1,4 +1,4 @@
-# Table collection hierarchies.
+# Table collection hierarchies
 
 ## Tables should be organised into a Table Collection Hierarchy.
 

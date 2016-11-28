@@ -1,4 +1,4 @@
-# Standards.
+# Standards
 
 ## All files must only use `UTF-8`, without `BOM`.
 

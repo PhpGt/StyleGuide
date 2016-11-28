@@ -1,4 +1,4 @@
-# File casing.
+# File casing
 
 ## Namespace-mapped files and directories must use `UpperCamelCase`.
 

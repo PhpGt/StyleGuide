@@ -1,4 +1,4 @@
-# Inline comments.
+# Inline comments
 
 ## For inline comments, double-slash comments (`//`) should be used.
 

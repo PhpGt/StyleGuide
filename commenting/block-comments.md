@@ -1,4 +1,4 @@
-# Block comments.
+# Block comments
 
 ## Block comments should only be used to provide class and method documentation in the form of doc blocks.
 

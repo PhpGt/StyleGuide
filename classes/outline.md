@@ -1,4 +1,4 @@
-# Outline.
+# Outline
 
 ## The term "class" refers to all classes, interfaces, and traits.
 

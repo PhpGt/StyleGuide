@@ -1,4 +1,4 @@
-# Variables.
+# Variables
 
 ## Never use global variables, except for superglobals.
 
