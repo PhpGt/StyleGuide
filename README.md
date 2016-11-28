@@ -161,7 +161,7 @@ Please see a simplified bulleted list below. Click the headings for more informa
 + Private methods should be preferred over anonymous functions where appropriate.
 + Anonymous functions should never exceed 5 lines.
 
-### [Documentation][documentation]
+### [Documentation](documentation)
 
 + Use full stops to end full sentences.
 + Don't use full stops to end fragmented sentences.
