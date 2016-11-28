@@ -43,9 +43,9 @@ public function go() : void {
 		&& $action->expiry < $expiry) {
 			$action->refresh();
 		}
-		
+
 		switch($count) {
-		ACTION::EMPTY: 
+		ACTION::EMPTY:
 			$action->setEmpty();
 			break;
 		ACTION::EMERGENCY:
