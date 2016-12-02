@@ -14,63 +14,67 @@ The following example code shows an overview of the style proposed in this guide
 
 ```php
 <?php
-namespace MyWebsite\Page;
+namespace FastFood\Page;
 
-use DateTime;
-use MyWebsite\Thing\Action;
-use MyWebsite\Thing\Response;
-use MyWebsite\OtherThing\Container;
+use FastFood\Logic\OrderLogic;
+use FastFood\Menu\MenuFactory;
+use Vendor\Food\FoodOrderInterface;
 
-class Index_PageLogic extends \Gt\Page\Logic {
+class OrderPage extends OrderLogic implements FoodOrderInterface {
 
-private $matchArray;
-private $filterDetail;
+const TYPE_MAIN = "order-type-main";
+const TYPE_VEGETARIAN = "order-type-vegetarian";
+const TYPE_VEGAN = "order-type-vegan";
+const TYPE_GLUTENFREE = "order-type-glutenfree";
 
-public function go() : void {
-	$count = 0;
-	$expiry = new DateTime("-5 minutes");
-	$action = new Action();
+/** @var OtherClass The other example class in this snippet */
+private $menu;
 
-	if($action->isActive()) {
-		$count += $this->exampleMethod();
+public function go(string $type) {
+	$this->menu = MenuFactory::create($type);
+	$this->sampleMethod($this->menu->getName(), $this->menu->getDefaultSize());
+	$output = $this->longMethodWithManyArgs(123, 456, "example");
+}
+
+private function sampleMethod(string $name, int $size = 0):void {
+	$maxSize = OtherClass::getMaxSize($name);
+
+	if($size === 0) {
+		$this->menu->fillEmpty(OtherClass::getDefault());
+	}
+	else if($size > $maxSize) {
+		$size = $maxSize;
 	}
 	else {
-// when the action is not active, we should call the set active method before
-// refreshing the action.
-		$action->setActive($this->anotherExampleMethod());
-
-		if($action->needsRefresh()
-		&& $action->expiry < $expiry) {
-			$action->refresh();
-		}
-
-		switch($count) {
-		ACTION::EMPTY:
-			$action->setEmpty();
+		switch($size) {
+		case OtherClass::SIZE_INDIVIDUAL:
+			$this->menu->setStyle("individual");
 			break;
-		ACTION::EMERGENCY:
-		ACTION::LOW:
-			$action->setThing();
+
+		case OtherClass::SIZE_FAMILY:
+			$this->menu->setStyle("family");
+			break;
+
+		default:
+			$this->menu->setStyle(Menu::SIZE_DEFAULT);
 			break;
 		}
 	}
 }
 
-private function exampleMethod() : int {
-	$this->matchArray = [
-		"first" => Action::FIRST_VALUE,
-		"second" => Action::SECOND_VALUE,
-	];
+public function longMethodWithManyArgs(
+	int $firstNumber,
+	int $secondNumber = 0,
+	string $exampleString = null
+):Menu {
+	$duplicate = MenuFactory::create($this->menu->getType());
 
-	return count($this->matchArray);
-}
-
-private function anotherExampleMethod() : ?Container {
-	foreach($this->matchArray as $key => $value) {
-		Response::add($key, $value);
+	if($duplicate->getSize() !== 0
+	&& $duplicate->name === $exampleString) {
+		return MenuFactory::createDefault();
 	}
 
-	return Response::currentContainer();
+	return $duplicate;
 }
 
 }#
