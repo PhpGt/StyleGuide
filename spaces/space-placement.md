@@ -111,4 +111,13 @@ $action = empty($_POST["action"]) ? "default" : $_POST["action"];
 $action = $_POST["action"] ?? "default";
 ```
 
+Bad example:
+
+```php
+$continue = ! $stop;
+$five = 2+3;
+$action = empty($_POST["action"])?"default":$_POST["action"];
+$action = $_POST["action"]??"default";
+```
+
 [control-structures]: http://php.net/manual/language.control-structures.php
