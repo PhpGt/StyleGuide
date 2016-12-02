@@ -1,6 +1,6 @@
 # PHP tags
 
-## The first line of all `.php` files should be exactly: `<?php`.
+## The first line of all `.php` files should be exactly "`<?php`".
 
 When PHP parses a file, it looks for opening and closing tags, `<?php` and `?>` which tell PHP to start and stop interpreting the code between them. Any characters outside of these tags will be served as text by the webserver.
 

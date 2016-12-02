@@ -84,7 +84,7 @@ Please see a simplified bulleted list below. Click the headings for more informa
 
 ### [General concepts](general)
 
-+ The first line of all `.php` files should be exactly: `<?php`.
++ The first line of all `.php` files should be exactly "`<?php`".
 + Never use the closing PHP tag (`?>`).
 + Never use PHP short tags.
 + All files must only use `UTF-8`, without `BOM`.
@@ -92,6 +92,7 @@ Please see a simplified bulleted list below. Click the headings for more informa
 + Every `.php` library file should contain one class exactly.
 + Every `.php` library file should be side effect free.
 + Singular words (e.g. item, stylesheet, user) should be used throughout files and code instead of plurals.
++ Avoid Hungarian Notation, where file/variable names that indicate their type.
 + Never use global variables, except for superglobals.
 + Properties should always be declared.
 + Variables should always be declared at the top of the scope they are used in.

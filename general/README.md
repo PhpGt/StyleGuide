@@ -2,7 +2,7 @@
 
 ## [PHP tags](php-tags.md)
 
-+ The first line of all `.php` files should be exactly: `<?php`.
++ The first line of all `.php` files should be exactly "`<?php`".
 + Never use the closing PHP tag (`?>`).
 + Never use PHP short tags.
 
@@ -19,6 +19,7 @@
 ## [Naming convention](naming-convention.md)
 
 + Singular words (e.g. item, stylesheet, user) should be used throughout files and code instead of plurals.
++ Avoid Hungarian Notation, where file/variable names that indicate their type.
 
 ## [Variables](variables.md)
 
