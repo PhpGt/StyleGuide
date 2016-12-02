@@ -70,8 +70,7 @@ class BadExample {
 
 The above example, even though is incredibly over-simplified, is already **four levels of indentation** nested by the time the first execution is made. The amount of indentation required in real-world complex programs is only going to exaggerate this, inevitably hindering readability.
 
-As a follow on from this section of the guide, it is recommended to have a [limit of four levels of indentation][limit-indentation] anyway.
+As a follow on from this section of the guide, it is recommended to have a [limit of four levels of indentation][line-length] anyway.
 
 [line-length]: line-length.md
 [side-effects]: ../general/side-effects.md
-[limit-indentation]: limit-indentation.md
