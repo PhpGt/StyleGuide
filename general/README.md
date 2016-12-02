@@ -25,4 +25,4 @@
 
 + Never use global variables, except for superglobals.
 + Properties should always be declared.
-+ Variables should always be declared at the top of the scope they are used in.
++ Variables should always be declared at the top of the block they are used in.
