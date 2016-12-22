@@ -36,7 +36,9 @@ Each level of indentation can be seen as a new level of abstraction to a functio
 
 One level of abstraction means just the one level of indentation, but this isn't always feasible in the real world, so the guideline maximum of three indentation levels is introduced to minimise function complexity.
 
-Good example (less indentation forces simplification through refactoring):
+**Less indentation forces simplification through refactoring.**
+
+Good example:
 
 ```php
 public function makeConnection(Settings $settings):Connection {
