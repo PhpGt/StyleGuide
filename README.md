@@ -42,7 +42,7 @@ private function sampleMethod(string $name, int $size = 0):void {
 	if($size === 0) {
 		$this->menu->fillEmpty(OtherClass::getDefault());
 	}
-	else if($size > $maxSize) {
+	elseif($size > $maxSize) {
 		$size = $maxSize;
 	}
 	else {
