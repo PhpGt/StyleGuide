@@ -30,8 +30,8 @@ const TYPE_GLUTENFREE = "order-type-glutenfree";
 /** @var OtherClass The other example class in this snippet */
 private $menu;
 
-public function go(string $type) {
-	$this->menu = MenuFactory::create($type);
+public function go():void {
+	$this->menu = MenuFactory::create($_GET["type"]);
 	$this->sampleMethod($this->menu->getName(), $this->menu->getDefaultSize());
 	$output = $this->longMethodWithManyArgs(123, 456, "example");
 }
@@ -79,6 +79,24 @@ public function longMethodWithManyArgs(
 
 }#
 ```
+
+## Automatic fixer
+
+To automatically fix code in accordance with this styleguide, a set of [PHP-CS-Fixer rules][PHP-CS-Fixer] have been written. With one command, the fixer can be run against a file or directory.
+
+To use the automatic fixer:
+
+```
+# 1. Get a copy of the fixer:
+git clone git@github.com:PhpGt/PHP-CS-Fixer
+cd PHP-CS-Fixer
+composer install
+
+# 2. Run the fixer against a directory:
+php gt-fix /path/to/repo/src
+```
+
+## Concepts of this styleguide
 
 Please see a simplified bulleted list below. Click the headings for more information, examples and justification behind the decisions.
 
