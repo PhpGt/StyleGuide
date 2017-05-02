@@ -8,6 +8,6 @@
 
 // TODO.
 
-## Properties should use `$camelCase`.
+## Properties should use `$lowercase_underscored`.
 
 // TODO.

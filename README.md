@@ -156,7 +156,7 @@ Please see a simplified bulleted list below. Click the headings for more informa
 + A class should only ever be autoloaded - never use `require` or `include`.
 + Constants should only be declared on a class.
 + Constants should use `UPPERCASE_UNDERSCORED`.
-+ Properties should use `$camelCase`.
++ Properties should use `$lowercase_underscored`.
 + Methods should use `camelCase()`.
 + All parameters should define their type where possible.
 + All methods should define their return type where possible.
@@ -184,11 +184,13 @@ Please see a simplified bulleted list below. Click the headings for more informa
 
 ### [Data structures](data-structures)
 
++ Data structures representing collections should be array-accessible.
++ Data structures representing individual items should be property-accessible.
 + Associative arrays should only be used for simple key-value-pairs.
 + Move associative arrays to an object's getter/setter storage where possible.
 + Static classes should only be used when truly stateless.
 + Private methods should be preferred over anonymous functions where appropriate.
-+ Anonymous functions should never exceed 5 lines.
++ Anonymous functions should never exceed 5-10 lines.
 
 ### [Documentation](documentation)
 

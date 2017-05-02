@@ -8,6 +8,6 @@
 
 // TODO.
 
-## Anonymous functions should never exceed 5 lines.
+## Anonymous functions should never exceed 5-10 lines.
 
 // TODO.
