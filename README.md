@@ -32,8 +32,12 @@ private $menu;
 
 public function go():void {
 	$this->menu = MenuFactory::create($_GET["type"]);
-	$this->sampleMethod($this->menu->getName(), $this->menu->getDefaultSize());
-	$output = $this->longMethodWithManyArgs(123, 456, "example");
+	$this->sampleMethod($this->menu->getName(), $this->menu->getSize());
+	$output = $this->longMethodWithManyArgs(
+		$this->getDefaultSize(),
+		123,
+		"example"
+	);
 }
 
 private function sampleMethod(string $name, int $size = 0):void {
@@ -190,4 +194,4 @@ Please see a simplified bulleted list below. Click the headings for more informa
 
 + Use full stops to end full sentences.
 + Don't use full stops to end fragmented sentences.
-+ Choose either full sentences or ending fragments in lists (not both).
++ Choose either full sentences or fragments in lists (not both).
