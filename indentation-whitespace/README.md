@@ -2,7 +2,7 @@
 
 ## [Tabs](tabs.md)
 
-+ Use the tab character for indentation, set to 4 columns wide.
++ Use the tab character for indentation.
 
 ## [Double-indentation](double-indentation.md)
 
