@@ -4,7 +4,7 @@
 
 Tabs visually indicate the current block's level of indentation, assisting readability by being set to a particular column width. A tab character's width can be dynamically set, while consistently maintaining a single level of indentation.
 
-There is no need to define a tab width as part of this styleguide, as every text editor is easily configurable to change the width of a tab character without affecting the source code itself. Tabs are originally 8 characters wide, still eing so within terminal emulators and web browsers, and due to this styleguide avoiding many levels of indentation, 8 character wide tabs seem a perfectly acceptable width to use. However, this decision is left to the developer to set in their editor. Very commonly a tab width of 4 characters is used.
+There is no need to define a tab width as part of this styleguide, as every text editor is easily configurable to change the width of a tab character without affecting the source code itself. Tabs are originally 8 characters wide, still being so within terminal emulators and web browsers, and due to this styleguide avoiding many levels of indentation, 8 character wide tabs seem a perfectly acceptable width to use. However, this decision is left to the developer to set in their editor. Very commonly a tab width of 4 characters is used.
 
 Using tabs allows tab stops to be respected. Tab characters that follow word characters on a line will automatically grow and shrink to the width of the next tab stop. Adding or removing characters before a tab will never break the tab stops. When changing the contents of the line before a tab, subsequent tab stops are kept aligned. Example: aligning array value assignments.
 
