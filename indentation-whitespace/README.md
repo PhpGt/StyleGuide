@@ -12,4 +12,4 @@
 
 + Do not leave whitespace at the end of lines.
 + Be as strict as is sensible to enforce 80 character lines.
-+ Limit to three levels of indentation.
++ Limit to three levels of indentation within functions.
