@@ -8,6 +8,6 @@
 
 // TODO.
 
-## Primary keys should follow `id_table`.
+## Primary keys should be called `id`.
 
 // TODO.
