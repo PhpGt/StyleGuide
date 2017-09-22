@@ -9,7 +9,7 @@
 
 + Tables should use `lowercase_underscored`.
 + Columns should use `lowercase_underscored`.
-+ Primary keys should follow `id_table`.
++ Primary keys should be called `id`.
 
 ## [Naming](naming.md)
 
