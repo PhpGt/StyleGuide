@@ -12,8 +12,8 @@ Good example (wrapped due to 80 character ruler):
 
 ```php
 public function aQuiteLongFunctionName(
-	ExampleClass $firstParameter,
-	string $secondParameter,
+	ExampleClass $first_parameter,
+	string $second_parameter,
 	int $size = 0
 ):ExampleClass {
 	$this->example();
@@ -23,7 +23,7 @@ public function aQuiteLongFunctionName(
 Bad example (function parameters require scrolling/wrapping):
 
 ```php
-public function aQuiteLongFunctionName(ExampleClass $firstParameter, string $secondParameter, int $size = 0):ExampleClass {
+public function aQuiteLongFunctionName(ExampleClass $first_parameter, string $second_parameter, int $size = 0):ExampleClass {
 	$this->example();
 }
 ```
@@ -58,8 +58,8 @@ public function makeConnection(Settings $settings):Connection {
 		$this->connection = new Connection();
 
 		if($settings->type === Settings::TYPE_INBOUND) {
-			if(!$settings->readOnly) {
-				$this->connection->acceptInbound = true;
+			if(!$settings->read_only) {
+				$this->connection->accept_inbound = true;
 			}
 		}
 	}
@@ -79,7 +79,7 @@ public function makeConnection(Settings $settings):Connection {
 		$this->response->showError($exception->getMessage());
 	}
 
-	while(count($this->connection->waitingPool) > 0) {
+	while(count($this->connection->waiting_pool) > 0) {
 		sleep(1);
 	}
 
