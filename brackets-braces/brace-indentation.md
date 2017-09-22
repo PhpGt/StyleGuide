@@ -32,7 +32,7 @@ class GoodExample extends Something {
 
 ## Conditionals within brackets should not gain extra indentation when breaking onto separate lines.
 
-When breaking long conditionals over multiple lines, the horizontal flow of the code should not be interrupted.
+When breaking long conditionals over multiple lines, the inner indentation should not be hidden by the indentation of the conditional.
 
 Good example:
 
