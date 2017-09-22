@@ -22,12 +22,10 @@ Including the above file affects output, whereas including the following file do
 ```
 <?php
 class Greeter {
-
-public function sayHello() {
-	echo "Hello, World!";
+	public function sayHello() {
+		echo "Hello, World!";
+	}
 }
-
-}#
 ```
 
 A software "library" means a repository of code that has no functionality without being included and used by a software project as a dependency.
