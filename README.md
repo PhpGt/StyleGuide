@@ -124,7 +124,7 @@ Please see a simplified bulleted list below. Click the headings for more informa
 + Avoid "double-indenting" blocks of code where no indentation is necessary for readability.
 + Do not leave whitespace at the end of lines.
 + Be as strict as is sensible to enforce 80 character lines.
-+ Limit to four levels of indentation.
++ Limit to three levels of indentation.
 
 ### [Brackets and braces](brackets-braces)
 
