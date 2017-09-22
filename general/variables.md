@@ -2,7 +2,7 @@
 
 ## Use snake_case for variable naming.
 
-When using snake_case, ambiguity is removed in abbreviations. For example, `host_ip_address` is obvious, whereas `hostIpAddress` or `hostIPAddress` are not.
+When using snake_case, the difference between variables and functions is made more obvious, as functions use `camelCase`. Ambiguity is removed in abbreviations. For example, `host_ip_address` is obvious, whereas the difference between `hostIpAddress` and `hostIPAddress` is not.
 
 Other identifiers within PHP use snake_case variations, such as constants' upper snake case (`THIS_IS_A_CONSTANT`). Using lower snake case for variables promotes consistentancy.
 
