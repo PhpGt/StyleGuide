@@ -6,7 +6,7 @@ The purpose of indenting code is to make it visually clear where a block of cont
 
 > Each indentation within code produces a new line of attention for the reader to keep track of while skimming your code. Aiming for less lines of attention produces more readable code.
 
-Within this guide, **only blocks that affect scope or control should be indented**. Certain blocks, such as **class definitions** and **switch statements** do not need to have double-indentation, because the contents of the blocks are within the same scope, and scope is perfectly obvious without indentation. For classes, because [every `.php` library file should contain one class exactly][side-effects], the contents of the class block can be left unindented, starting from column 1.
+Within this guide, **only blocks that affect scope or control should be indented**. Certain blocks, such as **switch statements** do not need to have double-indentation, because the contents of the blocks are within the same scope, and scope is perfectly obvious without indentation.
 
 ### Good example:
 
@@ -15,30 +15,24 @@ Within this guide, **only blocks that affect scope or control should be indented
 namespace Example\App;
 
 class GoodExample {
+	const EXAMPLE_CONSTANT_ONE = 1;
+	const EXAMPLE_CONSTANT_TWO = TWO;
+	private $spam;
+	private $eggs;
 
-const EXAMPLE_CONSTANT_ONE = 1;
-const EXAMPLE_CONSTANT_TWO = TWO;
-private $spam;
-private $eggs;
+	public function noNeedForIndentation(int $count):void {
+		switch($count) {
+		case EXAMPLE_CONSTANT_ONE:
+			$this->doSomething();
+			break;
 
-public function noNeedForIndentation(int $count):void {
-	switch($count) {
-	case EXAMPLE_CONSTANT_ONE:
-		$this->doSomething();
-		break;
-
-	case EXAMPLE_CONSTANT_TWO:
-		$this->doSomethingElse();
-		break;
+		case EXAMPLE_CONSTANT_TWO:
+			$this->doSomethingElse();
+			break;
+		}
 	}
 }
-
-}#
 ```
-
-In the above example, it is obvious that all members of the class (constant, private variables and function) are part of the contained class, because [every PHP library file should always only have one class in it][side-effects]. We can save one level of indentation in every file by not double-indenting the contents of a class.
-
-The hash is added to the closing brace of the class as a helpful indicator to prevent programmers from thinking they have already closed their function's brace.
 
 Within switch statements, it is easy to scan the eye down the code to see where each case starts, without having to indent the block again.
 
@@ -69,8 +63,6 @@ class BadExample {
 
 }
 ```
-
-The above example, even though is incredibly over-simplified, is already **four levels of indentation** nested by the time the first execution is made. The amount of indentation required in real-world complex programs is only going to exaggerate this, inevitably hindering readability.
 
 As a follow on from this section of the guide, it is recommended to have a [limit of four levels of indentation][line-length] anyway.
 
