@@ -21,67 +21,65 @@ use FastFood\Menu\MenuFactory;
 use Vendor\Food\FoodOrderInterface;
 
 class OrderPage extends OrderLogic implements FoodOrderInterface {
+	const TYPE_MAIN = "order-type-main";
+	const TYPE_VEGETARIAN = "order-type-vegetarian";
+	const TYPE_VEGAN = "order-type-vegan";
+	const TYPE_GLUTENFREE = "order-type-glutenfree";
 
-const TYPE_MAIN = "order-type-main";
-const TYPE_VEGETARIAN = "order-type-vegetarian";
-const TYPE_VEGAN = "order-type-vegan";
-const TYPE_GLUTENFREE = "order-type-glutenfree";
+	/** @var OtherClass The other example class in this snippet */
+	private $menu;
 
-/** @var OtherClass The other example class in this snippet */
-private $menu;
-
-public function go():void {
-	$this->menu = MenuFactory::create($_GET["type"]);
-	$this->sampleMethod($this->menu->getName(), $this->menu->getSize());
-	$output = $this->longMethodWithManyArgs(
-		$this->getDefaultSize(),
-		123,
-		"example"
-	);
-}
-
-private function sampleMethod(string $name, int $size = 0):void {
-	$maxSize = OtherClass::getMaxSize($name);
-
-	if($size === 0) {
-		$this->menu->fillEmpty(OtherClass::getDefault());
+	public function go():void {
+		$this->menu = MenuFactory::create($_GET["type"]);
+		$this->sampleMethod($this->menu->getName(), $this->menu->getSize());
+		$output = $this->longMethodWithManyArgs(
+			$this->getDefaultSize(),
+			123,
+			"example"
+		);
 	}
-	elseif($size > $maxSize) {
-		$size = $maxSize;
-	}
-	else {
-		switch($size) {
-		case OtherClass::SIZE_INDIVIDUAL:
-			$this->menu->setStyle("individual");
-			break;
 
-		case OtherClass::SIZE_FAMILY:
-			$this->menu->setStyle("family");
-			break;
+	private function sampleMethod(string $name, int $size = 0):void {
+		$maxSize = OtherClass::getMaxSize($name);
 
-		default:
-			$this->menu->setStyle(Menu::SIZE_DEFAULT);
-			break;
+		if($size === 0) {
+			$this->menu->fillEmpty(OtherClass::getDefault());
+		}
+		elseif($size > $maxSize) {
+			$size = $maxSize;
+		}
+		else {
+			switch($size) {
+			case OtherClass::SIZE_INDIVIDUAL:
+				$this->menu->setStyle("individual");
+				break;
+
+			case OtherClass::SIZE_FAMILY:
+				$this->menu->setStyle("family");
+				break;
+
+			default:
+				$this->menu->setStyle(Menu::SIZE_DEFAULT);
+				break;
+			}
 		}
 	}
-}
 
-public function longMethodWithManyArgs(
-	int $firstNumber,
-	int $secondNumber = 0,
-	string $exampleString = null
-):Menu {
-	$duplicate = MenuFactory::create($this->menu->getType());
+	public function longMethodWithManyArgs(
+		int $firstNumber,
+		int $secondNumber = 0,
+		string $exampleString = null
+	):Menu {
+		$duplicate = MenuFactory::create($this->menu->getType());
 
-	if($duplicate->getSize() !== 0
-	&& $duplicate->name === $exampleString) {
-		return MenuFactory::createDefault();
+		if($duplicate->getSize() !== 0
+		&& $duplicate->name === $exampleString) {
+			return MenuFactory::createDefault();
+		}
+
+		return $duplicate;
 	}
-
-	return $duplicate;
 }
-
-}#
 ```
 
 ## Automatic fixer
