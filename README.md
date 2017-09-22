@@ -40,13 +40,13 @@ class OrderPage extends OrderLogic implements FoodOrderInterface {
 	}
 
 	private function sampleMethod(string $name, int $size = 0):void {
-		$maxSize = OtherClass::getMaxSize($name);
+		$max_size = OtherClass::getMaxSize($name);
 
 		if($size === 0) {
 			$this->menu->fillEmpty(OtherClass::getDefault());
 		}
-		elseif($size > $maxSize) {
-			$size = $maxSize;
+		elseif($size > $max_size) {
+			$size = $max_size;
 		}
 		else {
 			switch($size) {
@@ -66,14 +66,14 @@ class OrderPage extends OrderLogic implements FoodOrderInterface {
 	}
 
 	public function longMethodWithManyArgs(
-		int $firstNumber,
-		int $secondNumber = 0,
-		string $exampleString = null
+		int $first_number,
+		int $second_number = 0,
+		string $example_string = null
 	):Menu {
 		$duplicate = MenuFactory::create($this->menu->getType());
 
 		if($duplicate->getSize() !== 0
-		&& $duplicate->name === $exampleString) {
+		&& $duplicate->name === $example_string) {
 			return MenuFactory::createDefault();
 		}
 
