@@ -113,6 +113,7 @@ Please see a simplified bulleted list below. Click the headings for more informa
 + Every `.php` library file should be side effect free.
 + Singular words (e.g. item, stylesheet, user) should be used throughout files and code instead of plurals.
 + Avoid Hungarian Notation, where file/variable names that indicate their type.
++ Use snake_case for variable naming.
 + Never use global variables, except for superglobals.
 + Properties should always be declared.
 + Variables should always be declared at the top of the block they are used in.
