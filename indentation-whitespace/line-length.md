@@ -30,7 +30,7 @@ public function aQuiteLongFunctionName(ExampleClass $first_parameter, string $se
 
 Function body width is less strict. If absolutely necessary, the contents of a function can span over 80 characters, but hitting the 80 character ruler is a good excuse to re-assess the complexity of your current function, or refactor the amount of indentation.
 
-## Limit to three levels of indentation.
+## Limit to three levels of indentation within functions.
 
 Each level of indentation can be seen as a new level of abstraction to a function's complexity. It is best practice for every function to do one thing and one thing only, limiting its abstraction to one.
 
