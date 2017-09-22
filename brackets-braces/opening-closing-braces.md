@@ -10,22 +10,20 @@ Good example:
 
 ```php
 class GoodExample {
-
-public function __construct(string $name) {
-	try {
-		$this->doSomething();
+	public function __construct(string $name) {
+		try {
+			$this->doSomething();
+		}
+		catch(ExampleException $exception) {
+			$this->handleError($exception);
+		}
 	}
-	catch(ExampleException $exception) {
-		$this->handleError($exception);
-	}
-}
 
-public function doSomething() {
-	for($i = 0; $i < 10; $i++) {
-		ExampleClass::count($i);
+	public function doSomething() {
+		for($i = 0; $i < 10; $i++) {
+			ExampleClass::count($i);
+		}
 	}
-}
-
 }#
 ```
 
@@ -34,27 +32,25 @@ Bad example:
 ```php
 class BadExample
 {
-
-public function __construct(string $name)
-{
-	try
+	public function __construct(string $name)
 	{
-		$this->doSomething();
+		try
+		{
+			$this->doSomething();
+		}
+		catch(ExampleException $exception)
+		{
+			$this->handleError($exception);
+		}
 	}
-	catch(ExampleException $exception)
-	{
-		$this->handleError($exception);
-	}
-}
 
-public function doSomething()
-{
-	for($i = 0; $i < 10; $i++)
+	public function doSomething()
 	{
-		ExampleClass::count($i);
+		for($i = 0; $i < 10; $i++)
+		{
+			ExampleClass::count($i);
+		}
 	}
-}
-
 }#
 ```
 
@@ -80,48 +76,44 @@ Good example:
 
 ```php
 class GoodExample {
+	public function __construct(int $size) {
+		if($size === 1) {
+			Logger::alert("Size is at 1, panic!");
+		}
+		else if($size < 5) {
+			Logger::critical("Size is getting too low!");
+		}
+		else {
+			Logger::info("Size is $size.");
+		}
 
-public function __construct(int $size) {
-	if($size === 1) {
-		Logger::alert("Size is at 1, panic!");
-	}
-	else if($size < 5) {
-		Logger::critical("Size is getting too low!");
-	}
-	else {
-		Logger::info("Size is $size.");
+		if($size === 0) {
+			Logger::emergency("Game over!");
+		}
 	}
 
-	if($size === 0) {
-		Logger::emergency("Game over!");
+	public function aShortFunction():void {
+		$this->complete();
 	}
 }
-
-public function aShortFunction():void {
-	$this->complete();
-}
-
-}#
 ```
 
 Bad example:
 
 ```php
 class GoodExample {
+	public function __construct(int $size) {
+		if($size === 1) {
+			Logger::alert("Size is at 1, panic!");
+		} else if($size < 5) {
+			Logger::critical("Size is getting too low!");
+		} else {
+			Logger::info("Size is $size.");
+		}
 
-public function __construct(int $size) {
-	if($size === 1) {
-		Logger::alert("Size is at 1, panic!");
-	} else if($size < 5) {
-		Logger::critical("Size is getting too low!");
-	} else {
-		Logger::info("Size is $size.");
+		if($size === 0) { Logger::emergency("Game over!"); }
 	}
 
-	if($size === 0) { Logger::emergency("Game over!"); }
-}
-
-public function aShortFunction():void {	$this->complete(); }
-
+	public function aShortFunction():void {	$this->complete(); }
 }#
 ```
