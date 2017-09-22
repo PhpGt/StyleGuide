@@ -4,7 +4,7 @@ This guide describes the preferred PHP coding style within core [PHP.Gt](https:/
 
 Individual developers and teams are likely to have their own strong views on certain coding styles, so this set of documents should be seen as **a guide, not a rulebook**. That being said, everything that is documented here is the preference of core developers, so please consider the points within before submitting pull requests.
 
-The intent of this document is to help guide the style of code contributions to maintain a consistent style throughout repositories, and to define and justify the decisions made within; some preferences of this styleguide are substantially different and in some areas unorthodox. For a more mainstream and widely adopted styleguide, please see [PHP Framework Interop Group's PSR-2][psr2].
+The intent of this document is to help guide the style of code contributions to maintain a consistent style throughout repositories, and to define and justify the decisions made within. For a more mainstream and widely adopted styleguide, please see [PHP Framework Interop Group's PSR-2][psr2].
 
 [psr2]: http://www.php-fig.org/psr/psr-2/
 
