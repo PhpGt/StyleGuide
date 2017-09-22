@@ -19,7 +19,8 @@ class GoodExample extends Something {
 		}
 		
 		$this->initialise();
-		
+
+// Note the extra level of indentation, without any reason to do so:
 			for($i = 0; $i < $maximum; $i++) {
 				$this->setNew($i);
 			}
