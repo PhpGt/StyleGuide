@@ -24,7 +24,7 @@ class GoodExample {
 			ExampleClass::count($i);
 		}
 	}
-}#
+}
 ```
 
 Bad example:
@@ -51,7 +51,7 @@ class BadExample
 			ExampleClass::count($i);
 		}
 	}
-}#
+}
 ```
 
 ## Closing braces should be placed at the start of their own line.
@@ -115,5 +115,5 @@ class GoodExample {
 	}
 
 	public function aShortFunction():void {	$this->complete(); }
-}#
+}
 ```
