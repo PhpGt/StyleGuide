@@ -7,6 +7,6 @@
 
 ## [File casing](file-casing.md)
 
++ Files and directories should be lowercase-hyphenated where not namespace-mapped.
 + Namespace-mapped files and directories must use `UpperCamelCase`.
-+ Namespaces and classes must use `UpperCamelCase`.
 + Web mapped files and directories must use `lowercase-hyphenated-words`.
