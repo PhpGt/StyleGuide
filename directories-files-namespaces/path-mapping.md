@@ -23,7 +23,7 @@ class Settings {
 
 If a PHP class acts as a controller for page logic its pathname must correspond to the requested URL it serves. Hyphens in URLs must be mapped to underscores in filepaths.
 
-A consistent set of rules must be used. Assuming a project's root directory is at `/app`, the base page directory is set to `./page`, and the class suffix for pages is `_Page`:
+A consistent set of rules must be used. Assuming a project's root directory is at `/app`, the base page directory is set to `./src/page`, and the class suffix for pages is `_Page`:
 
 URL requested `http://example.com/user/settings`
 
@@ -53,7 +53,7 @@ class Post_List_Page {
 
 ## Namespaces must map to file paths, as per PSR-4.
 
-A PHP class pathname must correspond to its fully qualified class name with respect to PSR-4 namespace root(s) defined in the project.
+When using namespace-mapped classes, a PHP file's pathname must correspond to its fully qualified class name with respect to PSR-4 namespace root(s) defined in the project.
 
 `composer.json`
 
