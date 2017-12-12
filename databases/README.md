@@ -7,8 +7,8 @@
 
 ## [Casing](casing.md)
 
-+ Tables should use `lowercase_underscored`.
-+ Columns should use `lowercase_underscored`.
++ Tables should use `SnakeCase`.
++ Columns should use `camelCase`.
 + Primary keys should be called `id`.
 
 ## [Naming](naming.md)
