@@ -46,7 +46,7 @@ Assuming the page root of the project is `src/page`, a requested URL of `http://
 Examples: 
 
 + `http://example.com/` => `src/page/index.html`, `src/page/index.php`
-+ `http://example.com/about-us` => `src/page/about-us.html`, `src/page/about-us.html`
++ `http://example.com/about-us` => `src/page/about-us.html`, `src/page/about-us.php`
 + `http://example.com/shop` => `src/page/shop/index.html`, `src/page/shop/index.php`
 
 [psr-4]: http://www.php-fig.org/psr/psr-4/
