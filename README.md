@@ -167,7 +167,7 @@ Please see a simplified bulleted list below. Click the headings for more informa
 + Queries should be organised into a Query Collection Hierarchy.
 + Tables should use `lowercase_underscored`.
 + Related should use an underscore to indicate their hierarchy.
-+ Columns should use `lowercase_underscored`.
++ Columns should use `camelCase`.
 + Primary keys should be called `id`.
 + Columns can have optional descriptions to uniquely identify their purpose.
 + Foreign key column names should match their referenced column.
