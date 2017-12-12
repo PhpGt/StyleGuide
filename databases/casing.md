@@ -1,10 +1,10 @@
 # Casing
 
-## Tables should use `lowercase_underscored`.
+## Tables should use `SnakeCase`.
 
 // TODO.
 
-## Columns should use `lowercase_underscored`.
+## Columns should use `camelCase`.
 
 // TODO.
 
