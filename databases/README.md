@@ -4,6 +4,7 @@
 
 + Queries should be organised into a Query Collection Hierarchy.
 + Tables within the same collection can use an underscore to indicate their hierarchy.
++ Related tables should use an underscore to indicate their hierarchy.
 
 ## [Casing](casing.md)
 
