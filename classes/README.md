@@ -9,7 +9,7 @@
 
 + Constants should only be declared on a class.
 + Constants should use `UPPERCASE_UNDERSCORED`.
-+ Properties should use `$lowercase_underscored`.
++ Properties should use `$camelCase`.
 
 ## [Methods](methods.md)
 
