@@ -155,7 +155,7 @@ Please see a simplified bulleted list below. Click the headings for more informa
 + A class should only ever be autoloaded - never use `require` or `include`.
 + Constants should only be declared on a class.
 + Constants should use `UPPERCASE_UNDERSCORED`.
-+ Properties should use `$lowercase_underscored`.
++ Properties should use `$camelCase`.
 + Methods should use `camelCase()`.
 + All parameters should define their type where possible.
 + All methods should define their return type where possible.
