@@ -21,11 +21,11 @@ class Settings {
 
 ### Web-mapping example
 
-If a PHP class acts as a controller for page logic its pathname must correspond to the requested URL it serves. Hyphens in URLs must be mapped to underscores in filepaths.
+If a PHP class acts as a controller for page logic its pathname must correspond to the requested URL it serves. Hyphens in URLs are dropped, upper-casing the words.
 
-A consistent set of rules must be used. Assuming a project's root directory is at `/app`, the base page directory is set to `./src/page`, and the class suffix for pages is `_Page`:
+A consistent set of rules must be used. Assuming a project's root directory is at `/app`, the base page directory is set to `./src/page`, and the class suffix for pages is `Page`:
 
-URL requested `http://example.com/user/settings`
+URL requested `http://example.com/user/advanced-settings`
 
 `/app/src/page/user/settings.php`:
 
@@ -33,7 +33,7 @@ URL requested `http://example.com/user/settings`
 <?php
 namespace MyApp\Page\User;
 
-class Settings_Page {
+class AdvancedSettingsPage {
 // ...
 }
 ```
