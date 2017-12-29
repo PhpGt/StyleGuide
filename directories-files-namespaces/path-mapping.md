@@ -40,13 +40,13 @@ class AdvancedSettingsPage {
 
 URL requested: `http://example.com/post-list`
 
-`/app/src/page/post_list.php`:
+`/app/src/page/post-list.php`:
 
 ```php
 <?php
 namespace MyApp\Page;
 
-class Post_List_Page {
+class PostListPage {
 // ...
 }
 ```
