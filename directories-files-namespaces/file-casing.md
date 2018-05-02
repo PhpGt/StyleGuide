@@ -1,6 +1,6 @@
 # File casing
 
-## Files and directories should be lowercase-hyphenated where not namespace-mapped.
+## Files and directories should be lowercase-hyphenated where not namespace-mapped
 
 By default, all files and directories should be lowercase wherever appropriate. Where words need to be split, a hyphen should be used.
 
@@ -9,7 +9,7 @@ By default, all files and directories should be lowercase wherever appropriate. 
 + `/var/www/example.com/src/page/blog/index.php`
 + `/var/www/example.com/src/page/items-for-sale.html`
 
-## Namespace-mapped files and directories must use `UpperCamelCase`.
+## Namespace-mapped files and directories must use `UpperCamelCase`
 
 All PHP files and directories within the namespace root directory of a project should respect the same casing as the namespaces and class names contained.
 
@@ -37,7 +37,7 @@ class TrackingCookie {
 // ...
 }
 ``` 
-## Web-mapped files and directories must use `lowercase-hyphenated-words`.
+## Web-mapped files and directories must use `lowercase-hyphenated-words`
 
 PHP is commonly used as a web language, and when PHP scripts or their HTML counterparts are loaded by a router for a web request, their filenames should map to the requested URL in context of the page root of the project.
 

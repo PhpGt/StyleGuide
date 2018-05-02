@@ -1,6 +1,6 @@
 # Tabs
 
-## Use the tab character for indentation.
+## Use the tab character for indentation
 
 Tabs visually indicate the current block's level of indentation, assisting readability by being set to a particular column width. A tab character's width can be dynamically set, while consistently maintaining a single level of indentation.
 

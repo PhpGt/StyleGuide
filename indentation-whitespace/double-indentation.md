@@ -1,6 +1,6 @@
 # Double-indentation
 
-## Avoid "double-indenting" blocks of code where no indentation is necessary for readability.
+## Avoid "double-indenting" blocks of code where no indentation is necessary for readability
 
 The purpose of indenting code is to make it visually clear where a block of control starts and ends. With respect to [using 80 character maximum line lengths][line-length], care should be taken to only indent blocks that actually increase readability.
 

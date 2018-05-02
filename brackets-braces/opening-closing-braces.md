@@ -1,6 +1,6 @@
 # Opening and closing braces
 
-## Opening braces should always be placed at the end of the line.
+## Opening braces should always be placed at the end of the line
 
 A consistent use of brace placement is used in this styleguide. With no exceptions, opening braces are always placed at the end of the line before the block they are opening.
 
@@ -54,7 +54,7 @@ class BadExample
 }
 ```
 
-## Closing braces should be placed at the start of their own line.
+## Closing braces should be placed at the start of their own line
 
 With respect to the current indentation level, closing braces should be placed at the start of their own line, with no meaningful tokens before or after the brace on that line.
 

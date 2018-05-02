@@ -1,6 +1,6 @@
 # Space placement
 
-## No extra space should be placed after a control structure keyword or function name.
+## No extra space should be placed after a control structure keyword or function name
 
 [Please see the PHP docs for a list of all control structure keywords][control-structures].
 
@@ -36,7 +36,7 @@ function badExample () {
 }
 ```
 
-## Opening brackets should not have a space after, closing brackets should not hace a space before.
+## Opening brackets should not have a space after, closing brackets should not hace a space before
 
 Good example:
 
@@ -62,7 +62,7 @@ function badExample( int $number, string $word ) {
 }
 ```
 
-## Commas separating variable lists should have a space or newline after, no whitespace before.
+## Commas separating variable lists should have a space or newline after, no whitespace before
 
 Variable lists include function parameters and array contents.
 
@@ -94,7 +94,7 @@ function badExample(int $number , string $word , bool $truth):array {
 }
 ```
 
-## A space should surround binary and ternary, but not unary operators.
+## A space should surround binary and ternary, but not unary operators
 
 Unary operators take one value, such as the logical not operator, `!`.
 

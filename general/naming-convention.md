@@ -1,6 +1,6 @@
 # Naming convention
 
-## Singular words (e.g. item, stylesheet, user) should be used throughout files and code instead of plurals.
+## Singular words (e.g. item, stylesheet, user) should be used throughout files and code instead of plurals
 
 Directories containing a type or category of file, for example Stylesheet files, Page Logic PHP scripts, or static asset files should be singular words, for example: `style`, `page`, `asset`, rather than `styles`, `pages`, `assets`.
 
@@ -24,7 +24,7 @@ foreach($ingredients as $ingredient) {
 }
 ```
 
-## Avoid Hungarian Notation, where file/variable names that indicate their type.
+## Avoid Hungarian Notation, where file/variable names that indicate their type
 
 Variables have types and files have extensions. This is enough to infer its type. Hungarian Notation is a naming convention in which the name of an entity indicates its type or intended use. This is a dated convention and should be avoided.
 

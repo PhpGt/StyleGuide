@@ -1,12 +1,12 @@
 # Inline comments
 
-## For inline comments, double-slash comments (`//`) should be used.
+## For inline comments, double-slash comments (`//`) should be used
 
 Inline comments are used to alert future developers to something **vital** about the code below it. 
 
 **The best comment is a comment that isn't written;** wherever possible, code should be written in small punchy functions that describe themselves. A comment should only be for describing non-obvious code behaviour, or justifying decisions. As inline comments do not roll over onto subsequent lines, they promote shorter sentences which is always a good thing.
 
-## Inline comments should have no indentation, starting from column 1.
+## Inline comments should have no indentation, starting from column 1
 
 Any comment in the code should contain important information. Starting the comment from column 1 stands out to developers.
 
@@ -28,7 +28,7 @@ class GoodExample {
 }
 ```
 
-## Inline comments can span multiple lines, prefixed with the double-slash.
+## Inline comments can span multiple lines, prefixed with the double-slash
 
 Sometimes writing comments is necessary. When inline comments (comments within the code) are used, always use double-slash commants as these can never be accidentally terminated.
 

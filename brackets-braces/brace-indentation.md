@@ -1,6 +1,6 @@
 # Brace indentation
 
-## One level of indentation should be applied within, and only within, the braces.
+## One level of indentation should be applied within, and only within, the braces
 
 Always ensure that within any block of braces, exactly one level of indentation is used. New indentation should never be added without the use of surrounding brances where the language permits them.
 
@@ -30,7 +30,7 @@ class GoodExample extends Something {
 }
 ```
 
-## Conditionals within brackets should not gain extra indentation when breaking onto separate lines.
+## Conditionals within brackets should not gain extra indentation when breaking onto separate lines
 
 When breaking long conditionals over multiple lines, the inner indentation should not be hidden by the indentation of the conditional.
 
@@ -54,7 +54,7 @@ if($details instanceof GoodExample
 }
 ```
 
-## Never leave conditional statements unbraced or unindented.
+## Never leave conditional statements unbraced or unindented
 
 Braces allow multiple statments to be bundled into a single execution path for a conditional or loop. In PHP and many other programming languages, it is possible to omit braces. When no braces are used, the interpreter will treat the single next statement as the execution path for that conditional or loop.
 

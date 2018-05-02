@@ -1,6 +1,6 @@
 # Standards
 
-## All files must only use `UTF-8`, without `BOM`.
+## All files must only use `UTF-8`, without `BOM`
 
 Throughout all code and across all servers, UTF-8 should be used to avoid any ambiguities when dealing with paths, browsers and other areas of HTTP that are only UTF-8 compatible.
 
@@ -10,7 +10,7 @@ The Unicode Standard neither requires nor recommends the use of the BOM for UTF-
 
 All good code editors can be configured to use different file encodings.
 
-## Always use UTC timezone to store date and time.
+## Always use UTC timezone to store date and time
 
 For consistency and to avoid ambiguity with timezones and daylight saving, all dates and times should be stored in UTC. All servers and databases can also be set to work in UTC, and that way the dates and times within your software will always be normalised, allowing the developer to set the default timezone per-application or per-user, where appropriate.
 

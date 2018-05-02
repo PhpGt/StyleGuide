@@ -1,6 +1,6 @@
 # Path mapping
 
-## Directories and files must either be namespace-mapped or web-mapped.
+## Directories and files must either be namespace-mapped or web-mapped
 
 The pathnames throughout a project must be obvious by either mapping directly to a class's namespace, or relate to a requested URL.
 
@@ -51,7 +51,7 @@ class PostListPage {
 }
 ```
 
-## Namespaces must map to file paths, as per PSR-4.
+## Namespaces must map to file paths, as per PSR-4
 
 When using namespace-mapped classes, a PHP file's pathname must correspond to its fully qualified class name with respect to PSR-4 namespace root(s) defined in the project.
 

@@ -1,12 +1,12 @@
 # Side effects
 
-## Every `.php` library file should contain one class exactly.
+## Every `.php` library file should contain one class exactly
 
 If a repository is a _library_, **every PHP file** should declare one class exactly and cause no other side effects.
 
 If a repository is a _project_, the same should be true for the majority of PHP files, with only bare-minimum essential entry point PHP files executing logic with side effects. PHP project files with side effects **must not** declare new classes.
 
-## Every `.php` library file should be side effect free.
+## Every `.php` library file should be side effect free
 
 The term "side effects" means execution of logic **merely from including the file**.
 

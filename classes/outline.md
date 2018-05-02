@@ -1,10 +1,10 @@
 # Outline
 
-## The term "class" refers to all classes, interfaces, and traits.
+## The term "class" refers to all classes, interfaces, and traits
 
 Throughout the StyleGuide, the term "class" refers to classes, interfaces, traits and other similar structures.
 
-## A class should only ever be autoloaded - never use `require` or `include`.
+## A class should only ever be autoloaded - never use `require` or `include`
 
 Apart from one exception, the Composer autoloader, there should never be any use of `require` or `include` statements. Every class within the system should be addressable using autoloaders, using the [PSR-4 Autoloader standard][psr-4] where possible.
 

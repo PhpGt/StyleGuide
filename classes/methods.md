@@ -1,10 +1,10 @@
 # Methods
 
-## Methods should use `camelCase()`.
+## Methods should use `camelCase()`
 
 There are many standard libraries that are in use within the PHP.Gt ecosystem that use camelCase methods. Most importantly, method naming convention must follow how libraries such as [Dom][dom] or [Fetch][fetch] are defined, which provide standardised APIs that come from predefined web APIs.
 
-## All parameters should hint their type where possible.
+## All parameters should hint their type where possible
 
 Hinting the type of function parameters improves readability for both humans and programming tools. Ambiguity is reduced, which in turn reduces code complexity and increases code quality.
 
@@ -12,7 +12,7 @@ Using type hints also self-documents functions, removing the need to use DocBloc
 
 Unlike using DocBlocks, if an incorrect type is passed at runtime, the program is halted.
 
-## All methods should define their return type where possible.
+## All methods should define their return type where possible
 
 Hinting the return type of functions improves readability for both humans and programming tools. Ambiguity is reduced, which in turn reduces code complexity and increases code quality.
 
@@ -20,7 +20,7 @@ Using type hints also self-documents functions, removing the need to use DocBloc
 
 Unlike using DocBlocks, if an incorrect type is returned at runtime, the program is halted.
 
-## Methods should avoid becoming longer than 20-50 lines.
+## Methods should avoid becoming longer than 20-50 lines
 
 The sweet spot for method line length is between 5 and 15 lines. Having short functions benfits the code in many ways:
 
@@ -34,7 +34,7 @@ In [_Clean Code: A Handbook of Agile Software Craftsmanship_][clean-code-book], 
 
 There is no one rule that produces better quality code, but **use your own common sense** when deciding when it's time to break a function down into smaller functions, and use this guide's short recommendation as an excuse to address your code's complexity when functions reach 50 lines long.
 
-## Classes should have all or no static methods.
+## Classes should have all or no static methods
 
 It is easy to say [static methods are evil][evil-static], but without concrete justification. The rule of thumb promoted in this guide it to never mix static with non-static methods within the same class, as it leads to confusion and unreadability.
 
