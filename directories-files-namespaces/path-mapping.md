@@ -21,13 +21,13 @@ class Settings {
 
 ### Web-mapping example
 
-If a PHP class acts as a controller for page logic its pathname must correspond to the requested URL it serves. Hyphens in URLs are dropped, upper-casing the words.
+If a PHP class acts as a controller for page logic its pathname must correspond to the requested URL it serves. Hyphens in URLs are kept in filenames, but are dropped in class names, upper-casing the words instead.
 
 A consistent set of rules must be used. Assuming a project's root directory is at `/app`, the base page directory is set to `./src/page`, and the class suffix for pages is `Page`:
 
 URL requested `http://example.com/user/advanced-settings`
 
-`/app/src/page/user/settings.php`:
+`/app/src/page/user/advanced-settings.php`:
 
 ```php
 <?php
