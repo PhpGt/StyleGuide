@@ -120,4 +120,27 @@ $action = empty($_POST["action"])?"default":$_POST["action"];
 $action = $_POST["action"]??"default";
 ```
 
+## A space should surround all type operators
+
+[String, array and type operators][operators] should always be surrounded by a single space, so it is clear that they are affecting the variable on the left side. This includes **concatenation**, **pushing** and **instance checking**.
+
+Most importantly, the array push operator should be surrounded by spaces so that it is not confused with an array assignment operator. `$a []= 1` has a totally different meaning to `$a[0] = 1`.
+
+Good example:
+
+```php
+$array = []; // Assignment operator, surrounded by spaces.
+$array []= "Hello"; // Push operator, surrounded by spaces.
+$array[0] .= "World"; // Concatenation operator, surrounded by spaces.
+```
+
+Bad example:
+
+```php
+$array= []; // Assignment operator is not surrounded both sides by a space.
+$array[] = "Hello"; // Push operator is disguised as an assignment operator.
+$array [0]. = "World"; // Confusing spaces - what is happening here?
+```
+
 [control-structures]: http://php.net/manual/language.control-structures.php
+[operators]: http://php.net/manual/en/language.operators.php
