@@ -34,9 +34,9 @@ In [_Clean Code: A Handbook of Agile Software Craftsmanship_][clean-code-book], 
 
 There is no one rule that produces better quality code, but **use your own common sense** when deciding when it's time to break a function down into smaller functions, and use this guide's short recommendation as an excuse to address your code's complexity when functions reach 50 lines long.
 
-## Classes should have all or no static methods
+## Classes should have all or no static members
 
-It is easy to say [static methods are evil][evil-static], but without concrete justification. The rule of thumb promoted in this guide it to never mix static with non-static methods within the same class, as it leads to confusion and unreadability.
+It is easy to say [static members are evil][evil-static], but without concrete justification. The rule of thumb promoted in this guide it to never mix static with non-static members within the same class, as it leads to confusion and unreadability.
 
 Good example (note that factory methods are within their own class, within their own file):
 
