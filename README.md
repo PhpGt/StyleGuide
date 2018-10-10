@@ -158,10 +158,10 @@ Please see a simplified bulleted list below. Click the headings for more informa
 + Constants should use `UPPERCASE_UNDERSCORED`
 + Properties should use `$camelCase`
 + Methods should use `camelCase()`
++ Classes should have all or no static members
 + All parameters should define their type where possible
 + All methods should define their return type where possible
 + Methods should avoid becoming longer than 20-50 lines
-+ Classes should have all or no static methods
 
 ### [Databases](databases)
 
