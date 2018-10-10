@@ -10,6 +10,7 @@
 + Constants should only be declared on a class
 + Constants should use `UPPERCASE_UNDERSCORED`
 + Properties should use `$camelCase`
++ Classes should have all or no static members
 
 ## [Methods](methods.md)
 
@@ -17,4 +18,3 @@
 + All parameters should define their type where possible
 + All methods should define their return type where possible
 + Methods should avoid becoming longer than 20-50 lines
-+ Classes should have all or no static methods
