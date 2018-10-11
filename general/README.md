@@ -28,7 +28,7 @@
 + Properties should always be declared
 + Variables should always be declared at the top of the block they are used in
 
-## [Open closed principal](open-closed.md)
+## [Open closed principal](open-closed-principal.md)
 
 + Avoid using `final` keyword unless necessary
 + Avoid calling functions in global namespace
