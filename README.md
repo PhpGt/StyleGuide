@@ -117,6 +117,8 @@ Please see a simplified bulleted list below. Click the headings for more informa
 + Never use global variables, except for superglobals
 + Properties should always be declared
 + Variables should always be declared at the top of the block they are used in
++ Avoid using final keyword unless necessary
++ Avoid calling functions in global namespace
 
 ### [Indentation and whitespace](indentation-whitespace)
 
