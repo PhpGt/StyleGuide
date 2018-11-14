@@ -95,7 +95,7 @@ cd PHP-CS-Fixer
 composer install
 
 # 2. Run the fixer against a directory:
-php gt-fix /path/to/repo/src
+php bin/fix /path/to/repo/src
 ```
 
 ## Concepts of this styleguide
