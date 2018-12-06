@@ -172,8 +172,8 @@ Please see a simplified bulleted list below. Click the headings for more informa
 + Related tables should use an underscore to indicate their hierarchy
 + Columns should use `camelCase`
 + Primary keys should be called `id`
-+ Columns can have optional descriptions to uniquely identify their purpose
-+ Foreign key column names should match their referenced column
++ Column names should be treated exactly as object properties are
++ Foreign key column names do not need special identification
 + Foreign key constraint names should reference both tables and columns uniquely
 
 ### [Commenting](commenting)
