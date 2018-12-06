@@ -14,6 +14,6 @@
 
 ## [Naming](naming.md)
 
-+ Columns can have optional descriptions to uniquely identify their purpose
-+ Foreign key column names should match their referenced column
++ Column names should be treated exactly as object properties are
++ Foreign key column names do not need special identification
 + Foreign key constraint names should reference both tables and columns uniquely
