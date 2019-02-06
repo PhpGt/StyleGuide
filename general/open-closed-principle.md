@@ -12,6 +12,8 @@ Making a class final means that nowhere else in code can `extend` the class. The
 
 ## Avoid calling functions in global namespace
 
-// TODO.
+In PHP, namespaces are separated using the backslash character (`\`).
+
+Putting a backslash before a function will ensure the function is called in the global namespace, even if there is a function by the same name in the current namespace. Doing this ensures your application is _closed for extension_ in the same way that marking a class as `final` is, and should be avoided so that future developers have the oportunity to extend functionality without having to modify the source.
 
 [wiki-open-closed]: https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle
