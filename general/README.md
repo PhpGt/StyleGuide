@@ -23,7 +23,7 @@
 
 ## [Variables](variables.md)
 
-+ Use snake_case for variable naming
++ Use camelCase for variable naming
 + Never use global variables, except for superglobals
 + Properties should always be declared
 + Variables should always be declared at the top of the block they are used in
