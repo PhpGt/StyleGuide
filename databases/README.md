@@ -8,7 +8,7 @@
 
 ## [Casing](casing.md)
 
-+ Tables should use `SnakeCase`
++ Tables should use `PascalCase`
 + Columns should use `camelCase`
 + Primary keys should be called `id`
 
