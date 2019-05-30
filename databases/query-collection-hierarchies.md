@@ -6,7 +6,7 @@ In real world systems, one single query will not always only read from or write 
 
 To promote clean database organisation, queries should be hierarchically organised within named "collection" directories in accordance to the area of the database their main intent affects. 
 
-A query collection will typically be the name of a table within the database -- for example, if there is a `customer` table and a `product` table, it makes sense to have a "customer" and "product" query collection for when select, insert, update or delete queries mainly affect those tables. If a query interacts with more than one table, through a join or subselect for example, it should be organised within the collection which represents its main _intent_.
+A query collection will typically be the name of a table within the database -- for example, if there is a `Customer` table and a `Product` table, it makes sense to have a "customer" and "product" query collection for when select, insert, update or delete queries mainly affect those tables. If a query interacts with more than one table, through a join or subselect for example, it should be organised within the collection which represents its main _intent_.
 
 An example query directory:
 
