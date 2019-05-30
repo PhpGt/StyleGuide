@@ -2,7 +2,7 @@
 
 ## Tables should use `PascalCase`
 
-PascalCase allows for tables to clearly identify their relationship within the [[query collection hierarchies]].
+PascalCase allows for tables to clearly identify their relationship within the [Query collection hierarchies](query-collection-hierarchies.md).
 
 An exception can be made when naming junction tables. The use of underscores can be used to separate the table names from the relationship, as in `Student_in_Class` and `Product_in_Category`.
 
