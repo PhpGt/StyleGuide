@@ -1,10 +1,10 @@
 # Casing
 
-## Tables should use `snake_case`
+## Tables should use `PascalCase`
 
-Snake case allows for tables to clearly identify their relationship within the [[query collection hierarchies]].
+PascalCase allows for tables to clearly identify their relationship within the [[query collection hierarchies]].
 
-When naming junction tables, the use of underscores separates the table names from the relationship, as in `student_in_class` and `product_in_category`.
+An exception can be made when naming junction tables. The use of underscores can be used to separate the table names from the relationship, as in `Student_in_Class` and `Product_in_Category`.
 
 ## Columns should use `camelCase`
 
