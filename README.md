@@ -26,8 +26,7 @@ class OrderPage extends OrderLogic implements FoodOrderInterface {
 	const TYPE_VEGAN = "order-type-vegan";
 	const TYPE_GLUTENFREE = "order-type-glutenfree";
 
-	/** @var OtherClass The other example class in this snippet */
-	private $menu;
+	private OtherClass $menu;
 
 	public function go():void {
 		$this->menu = MenuFactory::create($_GET["type"]);
