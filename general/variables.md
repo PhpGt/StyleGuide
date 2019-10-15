@@ -4,7 +4,7 @@
 
 There are many standard libraries that are in use within the PHP.Gt ecosystem that use camelCase property names. Most importantly, property naming convention must follow how libraries such as [Dom](https://php.gt/dom) or [Fetch](https://php.gt/fetch) are defined, which provide standardised APIs that come from predefined web APIs.
 
-## Never use global variables. Use a class to handle superglobals
+## Never use global variables
 
 PHP supports object oriented programming, but global variables undermine some benefits introduced by OOP. Superglobals, such as `$_GET`, `$_COOKIE`, etc. should be handled by middleware before accessing.
 
