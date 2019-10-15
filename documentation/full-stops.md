@@ -20,7 +20,7 @@ Good example:
 Steps to install the software:
 
 1. Download the code from http://example.com
-2. Unzip the downloaded file
+2. Unzip the downloaded file, using a tool such as p7zip or WinZip
 3. Run the `./install` executable
 ```
 
