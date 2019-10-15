@@ -39,13 +39,13 @@ class OrderPage extends OrderLogic implements FoodOrderInterface {
 	}
 
 	private function sampleMethod(string $name, int $size = 0):void {
-		$max_size = OtherClass::getMaxSize($name);
+		$maxSize = OtherClass::getMaxSize($name);
 
 		if($size === 0) {
 			$this->menu->fillEmpty(OtherClass::getDefault());
 		}
-		elseif($size > $max_size) {
-			$size = $max_size;
+		elseif($size > $maxSize) {
+			$size = $maxSize;
 		}
 		else {
 			switch($size) {
@@ -65,14 +65,14 @@ class OrderPage extends OrderLogic implements FoodOrderInterface {
 	}
 
 	public function longMethodWithManyArgs(
-		int $first_number,
-		int $second_number = 0,
-		string $example_string = null
+		int $firstNumber,
+		int $secondNumber = 0,
+		string $exampleString = null
 	):Menu {
 		$duplicate = MenuFactory::create($this->menu->getType());
 
 		if($duplicate->getSize() !== 0
-		&& $duplicate->name === $example_string) {
+		&& $duplicate->name === $exampleString) {
 			return MenuFactory::createDefault();
 		}
 
@@ -113,7 +113,7 @@ Please see a simplified bulleted list below. Click the headings for more informa
 + Singular words (e.g. item, stylesheet, user) should be used throughout files and code instead of plurals
 + Avoid Hungarian Notation, where file/variable names that indicate their type
 + Use camelCase for variable naming
-+ Never use global variables, except for superglobals
++ Never use global variables
 + Properties should always be declared
 + Variables should always be declared at the top of the block they are used in
 + Avoid using final keyword unless necessary
