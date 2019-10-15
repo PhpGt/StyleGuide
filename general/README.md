@@ -24,7 +24,7 @@
 ## [Variables](variables.md)
 
 + Use camelCase for variable naming
-+ Never use global variables, except for superglobals
++ Never use global variables
 + Properties should always be declared
 + Variables should always be declared at the top of the block they are used in
 
