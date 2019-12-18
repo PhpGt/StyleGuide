@@ -185,7 +185,7 @@ Please see a simplified bulleted list below. Click the headings for more informa
 
 ### [Data structures](data-structures)
 
-+ Data structures representing collections should be array-accessible
++ Data structures representing collections should be array-accessible and/or iterable
 + Data structures representing individual items should use getter functions
 + Associative arrays should only be used for simple key-value-pairs
 + Move associative arrays to an object's getter/setter storage where possible
