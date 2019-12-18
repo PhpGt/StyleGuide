@@ -1,6 +1,6 @@
 # Associative arrays
 
-## Data structures representing collections should be array-accessible
+## Data structures representing collections should be array-accessible and/or iterable
 
 In PHP, arrays are actually "ordered maps" that are used to contain a collection of items. When designing your own data structures, if an object represents a collection of items it should be array-accessible, using the most appropriate interface:
 
