@@ -1,4 +1,4 @@
-# PHP 7 coding styleguide
+# PHP coding styleguide
 
 This guide describes the preferred PHP coding style within core [PHP.Gt](https://github.com/phpgt) repositories and as a basis for other projects' style guides.
 
