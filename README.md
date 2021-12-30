@@ -28,18 +28,20 @@ class OrderPage extends OrderLogic implements FoodOrderInterface {
 
 	private OtherClass $menu;
 
-	public function go():void {
-		$this->menu = MenuFactory::create($_GET["type"]);
+	public function __construct(string $type):void {
+		$menuFactory = new MenuFactory();
+		$this->menu = $menuFactory->create($type);
 		$this->sampleMethod($this->menu->getName(), $this->menu->getSize());
 		$output = $this->longMethodWithManyArgs(
 			$this->getDefaultSize(),
 			123,
-			"example"
+			"example",
 		);
 	}
 
+	#[ExampleAttribute]
 	private function sampleMethod(string $name, int $size = 0):void {
-		$maxSize = OtherClass::getMaxSize($name);
+		$maxSize = $this->menu->getMaxSize($name);
 
 		if($size === 0) {
 			$this->menu->fillEmpty(OtherClass::getDefault());
