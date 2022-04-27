@@ -51,3 +51,46 @@ function getMessage(string $name, int $age):string {
 This style is sometimes more readable with simpler data types, and usually creates shorter functions. Either way, ensure you make a decision of what style to use, and maintain consistency throughout your codebase.
 
 ## A function should only ever do one thing, as indicated by its name
+
+The name of a function should reveal its intention. This can lead to more verbosity in your code, but that's a good thing. The length of a function's name is usually inversely proportional to the length of the function, because a more specific function name tends to do less, and a function that does less is always a cleaner decision.
+
+Consider two scenarios. The first, a function that returns differently depending on a set of circumstances:
+
+```php
+function getMenuItems(string $constraint = null):array {
+	$items = MenuFactory::getAll();
+	
+	if($constraint === "vegetarian") {
+		$items = array_filter($items, fn($item) => !$item->containsMeat());
+	}
+	if($constraint === "gluten-free") {
+		$items = array_filter($items, fn($item) => !$item->containsGluten());
+	}
+	
+	return $items;
+}
+```
+
+From a reader's perspective, one needs to read the whole function to understand the context and meaning of the `$constraint` variable. Compare this to the second style, where a separate function describes each constraint:
+
+```php
+function getAllMenuItems():array {
+	return MenuFactory::getAll();
+}
+
+function getVegetarianMenuItems():array {
+	return array_filter(MenuFactory::getAll(), fn($item) => !$item->containsMeat());
+}
+
+function getGlutenFreeMenuItems():array {
+	return array_filter(MenuFactory::getAll(), fn(item) => !$item->containsGluten());
+}
+```
+
+This second example immediately explains what each function is doing, and means each function can be reduced to a single line of code. 
+
+Always be as specific as possible with the name of a function, so it describes exactly what it is doing, favouring multiple, longer function names over a single function that does more than one thing.
+
+Another rule of thumb is to be wary of words like "and" and "or" in function names, as these indicate that the function does more than one thing.
+
+A benefit of this extra verbosity is that your code becomes extra searchable by IDEs. In the above examples, the multiple functions allow developers to search for functions containing the word "vegetarian", allowing for much faster navigation through the code.
