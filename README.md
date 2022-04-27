@@ -121,6 +121,7 @@ Please see a simplified bulleted list below. Click the headings for more informa
 + Limit function length
 + Ensure return points are consistent
 + A function should only ever do one thing, as indicated by its name
++ Functions should either mutate or query the system, never both
 + Use camelCase for variable naming
 + Never use global variables
 + Properties should always be declared

@@ -26,6 +26,7 @@
 + Limit function length
 + Ensure return points are consistent
 + A function should only ever do one thing, as indicated by its name
++ Functions should either mutate or query the system, never both
 
 ## [Variables](variables.md)
 

@@ -94,3 +94,13 @@ Always be as specific as possible with the name of a function, so it describes e
 Another rule of thumb is to be wary of words like "and" and "or" in function names, as these indicate that the function does more than one thing.
 
 A benefit of this extra verbosity is that your code becomes extra searchable by IDEs. In the above examples, the multiple functions allow developers to search for functions containing the word "vegetarian", allowing for much faster navigation through the code.
+
+## Functions should either mutate or query the system, never both
+
+For clarity throughout your code, a function's implementation should take the form of a mutator or query. This is sometimes referred to as "[command/query separation][command-query-separation]".
+
+A "mutator", or "command" performs an action, changing the state of the system. For example, `$userRepo->createNewUser("cody")`, `$shop->emptyCart()`, `$user->setVisibility(true)`, `$ui->showNotification("Item added to cart")`.
+
+A "query" retrieves information without having any side effects. For example, `$userRepo->getUserById(105)`, `$item->containsMeat()`, `$input->validate()`.
+
+[command-query-separation]: https://www.martinfowler.com/bliki/CommandQuerySeparation.html
