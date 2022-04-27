@@ -11,9 +11,11 @@ Not all types of collection should be both an `ArrayAccess` and an `Iterator`. F
 
 ## Data structures representing individual items should use getter functions
 
-When designing your own data structures, if an object represents a single item, its data attributes should be accessed via getter functions, rather than as an array-like object, or public properties where acceptable.
+When designing your own data structures, if an object represents a single item, its data attributes should be accessed via getter functions, rather than as an array-like object, or as public properties where acceptable.
 
 Public properties should be used sparingly, and when they are needed it is recommended to consider [read-only properties][read-only] or [magic methods][magic-methods] to provide access to an object's internal data, rather than exposing properties directly. This allows for exposing read-only properties as well as improving maintainability when code is refactored in the future.
+
+When getter functions are used on objects with unknown/arbitrary data contents, such as a database row, the getters should be provided using a [type safe interface][type-safe-getter].
 
 ## Associative arrays should only be used for simple key-value-pairs
 
@@ -25,3 +27,4 @@ It's possible to __union__ two arrays with the `+`, and __push_ an item into an 
 
 [magic-methods]: https://php.net/manual/en/language.oop5.magic.php
 [read-only]: https://www.php.net/manual/en/language.oop5.properties.php#language.oop5.properties.readonly-properties
+[type-safe-getter]: https://www.php.gt/typesafegetter
