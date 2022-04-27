@@ -22,7 +22,7 @@ Unlike using DocBlocks, if an incorrect type is returned at runtime, the program
 
 ## Methods should avoid becoming longer than 20-50 lines
 
-The sweet spot for method line length is between 5 and 15 lines. Having short functions benfits the code in many ways:
+The sweet spot for method line length is between 5 and 15 lines. Having short functions benefits the code in many ways:
 
 + Forces breaking out abstraction into separate function calls which increases readability (and scanability)
 + Easy to fit onto a screen, for example in a code review session
@@ -33,6 +33,12 @@ In [_Clean Code: A Handbook of Agile Software Craftsmanship_][clean-code-book], 
 > The first rule of functions is that they should be small. The second rule of functions is that they should be smaller than that. Functions should not be 100 lines long. Functions should hardly ever be 20 lines long.
 
 There is no one rule that produces better quality code, but **use your own common sense** when deciding when it's time to break a function down into smaller functions, and use this guide's short recommendation as an excuse to address your code's complexity when functions reach 50 lines long.
+
+## Public functions should show the headlines of a class's functionality
+
+This is sometimes referred to as the step-down rule. A class's functionality should be obvious by quickly scanning through its public functions. To aid readability, a class's public method(s) are its headlines. They should only be a few lines long, and their implementation should be an abstraction of private methods on the class. This allows developers to read the intent of functions much easier, and can optionally get more detail by jumping to the definition of the abstractions.
+
+Abstractions should be written as private methods, stored in order of their execution. This acts like a newspaper: the headline is at the top, and if the reader decides they need more information, they can deep-dive into the content, but this should always be the decision of the reader, to avoid overwhelming them.
 
 [dom]: https://php.gt/dom
 [fetch]: https://php.gt/fetch

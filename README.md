@@ -173,6 +173,7 @@ Please see a simplified bulleted list below. Click the headings for more informa
 + All parameters should define their type where possible
 + All methods should define their return type where possible
 + Methods should avoid becoming longer than 20-50 lines
++ Public functions should show the headlines of a class's functionality
 
 ### [Databases](databases)
 
