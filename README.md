@@ -118,6 +118,9 @@ Please see a simplified bulleted list below. Click the headings for more informa
 + Every `.php` library file should be side effect free
 + Singular words (e.g. item, stylesheet, user) should be used throughout files and code instead of plurals
 + Avoid Hungarian Notation, where file/variable names that indicate their type
++ Limit function length
++ Ensure return points are consistent
++ A function should only ever do one thing, as indicated by its name
 + Use camelCase for variable naming
 + Never use global variables
 + Properties should always be declared
@@ -194,6 +197,7 @@ Please see a simplified bulleted list below. Click the headings for more informa
 + Data structures representing collections should be array-accessible and/or iterable
 + Data structures representing individual items should use getter functions
 + Associative arrays should only be used for simple key-value-pairs
++ Use built-in functions rather than operators to manipulate array contents
 + Move associative arrays to an object's getter/setter storage where possible
 + Static classes should only be used when truly stateless
 + Private methods should be preferred over anonymous functions where appropriate

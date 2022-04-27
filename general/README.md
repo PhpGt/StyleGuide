@@ -21,6 +21,12 @@
 + Singular words (e.g. item, stylesheet, user) should be used throughout files and code instead of plurals
 + Avoid Hungarian Notation, where file/variable names that indicate their type
 
+## [Functions](functions.md)
+
++ Limit function length
++ Ensure return points are consistent
++ A function should only ever do one thing, as indicated by its name
+
 ## [Variables](variables.md)
 
 + Use camelCase for variable naming
