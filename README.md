@@ -71,14 +71,18 @@ class OrderPage extends OrderLogic implements FoodOrderInterface {
 		int $secondNumber = 0,
 		string $exampleString = null
 	):Menu {
-		$duplicate = MenuFactory::create($this->menu->getType());
+		$arrayOfItems = MenuFactory::create($this->menu->getType());
 
 		if($duplicate->getSize() !== 0
 		&& $duplicate->name === $exampleString) {
 			return MenuFactory::createDefault();
 		}
+		
+		foreach($this->getNewItems() as $item) {
+			array_push($arrayOfItems, $item);
+		}
 
-		return $duplicate;
+		return $arrayPfOtems;
 	}
 }
 ```
