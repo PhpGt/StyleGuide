@@ -21,10 +21,10 @@ use FastFood\Menu\MenuFactory;
 use Vendor\Food\FoodOrderInterface;
 
 class OrderPage extends OrderLogic implements FoodOrderInterface {
-	const TYPE_MAIN = "order-type-main";
-	const TYPE_VEGETARIAN = "order-type-vegetarian";
-	const TYPE_VEGAN = "order-type-vegan";
-	const TYPE_GLUTENFREE = "order-type-glutenfree";
+	const string TYPE_MAIN = "order-type-main";
+	const string TYPE_VEGETARIAN = "order-type-vegetarian";
+	const string TYPE_VEGAN = "order-type-vegan";
+	const string TYPE_GLUTENFREE = "order-type-glutenfree";
 
 	private OtherClass $menu;
 
@@ -32,6 +32,8 @@ class OrderPage extends OrderLogic implements FoodOrderInterface {
 		$menuFactory = new MenuFactory();
 		$this->menu = $menuFactory->create($type);
 		$this->sampleMethod($this->menu->getName(), $this->menu->getSize());
+		
+// Long arguments can be split over multiple lines, all with trailing commas.
 		$output = $this->longMethodWithManyArgs(
 			$this->getDefaultSize(),
 			123,
@@ -44,34 +46,32 @@ class OrderPage extends OrderLogic implements FoodOrderInterface {
 		$maxSize = $this->menu->getMaxSize($name);
 
 		if($size === 0) {
-			$this->menu->fillEmpty(OtherClass::getDefault());
+			$this->menu->fillEmpty(OtherClass::DEFAULT_MENU);
 		}
 		elseif($size > $maxSize) {
 			$size = $maxSize;
 		}
 		else {
-			switch($size) {
-			case OtherClass::SIZE_INDIVIDUAL:
-				$this->menu->setStyle("individual");
-				break;
-
-			case OtherClass::SIZE_FAMILY:
-				$this->menu->setStyle("family");
-				break;
-
-			default:
-				$this->menu->setStyle(Menu::SIZE_DEFAULT);
-				break;
-			}
+// Prefer introducing a variable using a match statement than using a switch statement.
+			$style = match($size) {
+				// Use Enums wherever possible:
+				Size::INDIVIDUAL => "small",
+				Size::FAMILY => "large",
+				default => "default",
+			};
+			
+			$this->menu->setStyle($style);
 		}
 	}
 
 	public function longMethodWithManyArgs(
 		int $firstNumber,
 		int $secondNumber = 0,
-		string $exampleString = null
+// Nullable types muse be type-hinted as such:
+		?string $exampleString = null,
 	):Menu {
-		$arrayOfItems = MenuFactory::create($this->menu->getType());
+// When an indexed array is used, it's useful to refer to it as a "list". 
+		$itemList = MenuFactory::create($this->menu->getType());
 
 		if($duplicate->getSize() !== 0
 		&& $duplicate->name === $exampleString) {
@@ -79,15 +79,17 @@ class OrderPage extends OrderLogic implements FoodOrderInterface {
 		}
 		
 		foreach($this->getNewItems() as $item) {
-			array_push($arrayOfItems, $item);
+			array_push($itemList, $item);
 		}
 
-		return $arrayPfOtems;
+		return $itemList;
 	}
 }
 ```
 
 ## Automatic fixer
+
+
 
 To automatically fix code in accordance with this styleguide, a set of [PHP-CS-Fixer rules][PHP-CS-Fixer] have been written. With one command, the fixer can be run against a file or directory.
 
